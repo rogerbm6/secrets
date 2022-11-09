@@ -13,6 +13,11 @@
         "axios": "^0.21",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
+        "vue": "^3.0.0",
         "postcss": "^8.1.14"
+    },
+    "dependencies": {
+        "vue-axios": "^3.5.2",
+        "vue-router": "^4.1.6"
     }
 }

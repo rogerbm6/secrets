@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+//Secrets
+Route::get('secrets', '\App\Http\Controllers\Api\SecretController@index');
