@@ -8,7 +8,7 @@ const Crear = () => import('./components/Crear.vue');
 const routes = [
     {
         name: 'secrets',
-        path: '/',
+        path: '/secrets',
         component : Secret
     },
     {

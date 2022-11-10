@@ -21,3 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 //Secrets
 Route::get('secrets', '\App\Http\Controllers\Api\SecretController@index');
+
+Route::post('crear', '\App\Http\Controllers\Api\SecretController@store');
