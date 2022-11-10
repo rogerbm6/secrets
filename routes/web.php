@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/secrets', function () {
-    return view('welcome');
+    return view('secrets.index');
 });
