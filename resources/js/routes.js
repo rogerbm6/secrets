@@ -4,6 +4,8 @@ const Secret = () => import('./components/Secret.vue');
 
 const Crear = () => import('./components/Crear.vue');
 
+const Ver = () => import('./components/Ver.vue');
+
 //rutas a componentes
 const routes = [
     {
@@ -15,6 +17,11 @@ const routes = [
         name: 'crear',
         path: '/crear',
         component : Crear
+    },
+    {
+        name: 'ver',
+        path: '/ver/:id',
+        component : Ver
     },
 ];
 

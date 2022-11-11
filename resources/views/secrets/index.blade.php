@@ -19,17 +19,20 @@
 
     </main>
 
+    <div class="row">
+        <div class="form-group col-md-6">
+            <router-link :to='{name:"secrets"}' class="btn btn-primary">Ver Secretos</router-link>
+        </div>
+        <div class="form-group col-md-6">
+            <router-link :to='{name:"crear"}' class="btn btn-success">Crear Secreto</router-link>
+        </div>
+    </div>
     <article>
         <div class="row">
-            <div class="col-md-3">
-                <!-- index Secrets component -->
-                <crear></crear>
+            <div class="col-md-12">
+                <router-view></router-view>
             </div>
-            <div class="col-md-9">
-            <!-- index Secrets component -->
-                <secret></secret>
 
-            </div>
         </div>
 
     </article>

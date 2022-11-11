@@ -12,7 +12,7 @@ class SecretController extends Controller
     public function index()
     {
         
-        return SecretResource::collection(Secret::all());
+        return SecretResource::collection(Secret::orderBy('id','desc')->get());
     }
 
     public function store(Request $request)
@@ -25,13 +25,15 @@ class SecretController extends Controller
         
     }
 
-    public function show(Secret $secret)
+    public function show($id)
     {
-        return SecretResource::collection($secret);
+        $secret = Secret::find($id);
+        return response()->json($secret);
     }
 
-    public function destoy(Secret $secret)
+    public function destroy($id)
     {
+        $secret = Secret::find($id);
         $secret->delete();
         return response()->json([
             'mensaje' => 'Secreto eliminado'

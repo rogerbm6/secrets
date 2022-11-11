@@ -23,3 +23,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('secrets', '\App\Http\Controllers\Api\SecretController@index');
 
 Route::post('crear', '\App\Http\Controllers\Api\SecretController@store');
+
+Route::get('ver/{id}', '\App\Http\Controllers\Api\SecretController@show');
+
+Route::delete('delete/{id}', '\App\Http\Controllers\Api\SecretController@destroy');

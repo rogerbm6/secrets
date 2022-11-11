@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/secrets', function () {
+Route::get('/', function () {
     return view('secrets.index');
 });
